@@ -1,0 +1,2 @@
+python-telegram-bot>=20.0  # Используется новая версия PTB с async/await
+python-dotenv             # Для загрузки переменных окружения из config.env

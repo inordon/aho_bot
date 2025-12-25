@@ -1,0 +1,9 @@
+services:
+  bot:
+    build: .
+    container_name: aho-bot
+    restart: always
+    volumes:
+      - .:/app
+    environment:
+      - TZ=Europe/Moscow
