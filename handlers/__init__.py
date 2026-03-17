@@ -1,0 +1,103 @@
+"""
+Обработчики команд АХО Бота
+"""
+
+from handlers.user_handlers import (
+    start,
+    main_menu,
+    cancel,
+    cancel_request,
+    confirm_ticket,
+    mystatus,
+    process_pass_fio,
+    process_pass_date,
+    process_pass_purpose,
+    process_purchase_link,
+    process_purchase_quantity,
+    process_purchase_reason,
+    process_problem_type,
+    process_problem_description,
+    process_problem_photo,
+    skip_problem_photo,
+    process_other_description,
+    MAIN_MENU,
+    PRIORITY_SELECT,
+    PASS_FIO,
+    PASS_DATE,
+    PASS_PURPOSE,
+    PASS_CONFIRM,
+    PURCHASE_LINK,
+    PURCHASE_QUANTITY,
+    PURCHASE_REASON,
+    PURCHASE_CONFIRM,
+    PROBLEM_TYPE,
+    PROBLEM_DESCRIPTION,
+    PROBLEM_PHOTO,
+    PROBLEM_CONFIRM,
+    OTHER_DESCRIPTION,
+    OTHER_CONFIRM,
+)
+
+from handlers.manager_handlers import (
+    tickets_command,
+    handle_ticket_callback,
+    handle_comment_input,
+    AWAITING_COMMENT,
+)
+
+from handlers.admin_handlers import (
+    add_manager,
+    remove_manager,
+    list_managers,
+    stats,
+    set_lead,
+)
+
+__all__ = [
+    # User handlers
+    "start",
+    "main_menu",
+    "cancel",
+    "cancel_request",
+    "confirm_ticket",
+    "mystatus",
+    "process_pass_fio",
+    "process_pass_date",
+    "process_pass_purpose",
+    "process_purchase_link",
+    "process_purchase_quantity",
+    "process_purchase_reason",
+    "process_problem_type",
+    "process_problem_description",
+    "process_problem_photo",
+    "skip_problem_photo",
+    "process_other_description",
+    # States
+    "MAIN_MENU",
+    "PRIORITY_SELECT",
+    "PASS_FIO",
+    "PASS_DATE",
+    "PASS_PURPOSE",
+    "PASS_CONFIRM",
+    "PURCHASE_LINK",
+    "PURCHASE_QUANTITY",
+    "PURCHASE_REASON",
+    "PURCHASE_CONFIRM",
+    "PROBLEM_TYPE",
+    "PROBLEM_DESCRIPTION",
+    "PROBLEM_PHOTO",
+    "PROBLEM_CONFIRM",
+    "OTHER_DESCRIPTION",
+    "OTHER_CONFIRM",
+    # Manager handlers
+    "tickets_command",
+    "handle_ticket_callback",
+    "handle_comment_input",
+    "AWAITING_COMMENT",
+    # Admin handlers
+    "add_manager",
+    "remove_manager",
+    "list_managers",
+    "stats",
+    "set_lead",
+]
